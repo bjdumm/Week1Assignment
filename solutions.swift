@@ -5,8 +5,6 @@
 //  Created by Brennan Dumm on 2/13/23.
 //
 
-import Foundation
-
 import UIKit
 
 //Exercise 1
@@ -69,7 +67,7 @@ print(approximatePi)
 This is the end of the first multiline comment. */
 
 //Exercise 14
-var x = 5, y = 3
+print("This is the first sentence. " + "This is the second sentence")
 
 //=============== Basics 2 =========================
 //Exercise 15
@@ -81,7 +79,7 @@ print(number, name)
 
 //Exercise 17
 let num: Int? = 2
-print(num!)
+print(num ?? 0)
 //Yes, a constant can have an optional type
 
 //Exercise 18
@@ -168,9 +166,9 @@ isTwenty(12,8)
 
 //Exercise 28
 func isOpposite(a: Int, b: Int) -> Bool {
-    if (a > 0 && b > 0) {
+    if (a >= 0 && b >= 0) {
         return false
-    }else if (a < 0 && b < 0){
+    }else if (a <= 0 && b <= 0){
         return false
     } else {
         return true
@@ -180,6 +178,8 @@ func isOpposite(a: Int, b: Int) -> Bool {
 isOpposite(a: 1, b: 2)
 isOpposite(a: 1, b: -2)
 isOpposite(a: -1, b: -2)
+isOpposite(a: 0, b: 0)
+
 
 //Exercise 29
 func inRange(_ r1: Int, _ r2: Int) -> Bool {
@@ -193,6 +193,7 @@ func inRange(_ r1: Int, _ r2: Int) -> Bool {
 }
 
 print(inRange(2,14))
+print(inRange(-5,100))
 
 //Exercise 30
 func changeString(_ first: String, _ last: String, for str: String) -> String {
@@ -203,4 +204,6 @@ func changeString(_ first: String, _ last: String, for str: String) -> String {
     return result
 }
 
-var res = changeString("a","b", for:"Word")
+var str = "Word"
+var res = changeString("a","b", for: str)
+print(res)
