@@ -60,7 +60,7 @@ print(approximatePi)
 This is the end of the first multiline comment. */
 
 //Exercise 14
-var x = 5, y = 3
+print("This is the first sentence. " + "This is the second sentences")
 
 //=============== Basics 2 =========================
 //Exercise 15
@@ -171,6 +171,7 @@ func isOpposite(a: Int, b: Int) -> Bool {
 isOpposite(a: 1, b: 2)
 isOpposite(a: 1, b: -2)
 isOpposite(a: -1, b: -2)
+
 
 //Exercise 29
 func inRange(_ r1: Int, _ r2: Int) -> Bool {
